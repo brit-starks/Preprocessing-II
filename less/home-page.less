@@ -22,6 +22,7 @@
       border-bottom: 1px dashed @navigation-border;
       padding-bottom: 2rem;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
     }
 
@@ -61,7 +62,7 @@
       }
     
       .content-destination {
-        width: 65%;
+        width: 60%;
         margin: 0 auto 30px;
         display: flex;
         flex-direction: column;
@@ -72,6 +73,8 @@
       }
     
       .content-pick {
+        width: 80%;
+        margin: 0 auto;
         padding-top: 30px;
         border-top: 2px dashed @navigation-border;
         display: flex;
@@ -80,6 +83,11 @@
         .destination {
           width: 30%;
           margin-bottom: 30px;
+          padding: 2rem;
+
+          .btn{
+            .btn-border();
+          }
         }
       }
   }
